@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Al-Tawjih</h1>
+            <div class="search">
+                <input type="text" id="search-input" class="searchInput" placeholder="  Search Surah or Juz...">    
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        </nav>
+
+        <div class="header-bottom">
+            <div class="tabs">
+                <a href="#" class="tab-link active" data-tab="surah-tab">SURAH</a>
+                <a href="#" class="tab-link" data-tab="juz-tab">JUZ</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="content">
+
+        <!-- Surah Tab -->
+
+        <div id="surah-tab" class="tab-content active">
+
+
+            <a data-page="1" class="surah-item">
+            <div class="list-item">
+                    <span>1</span>
+                    <span>Surat Al-Fatiha</span>
+                    <span>1</span>
+            </div>
+        </a>
+            
+            <a data-page="2" class="surah-item">
+                <div class="list-item">
+                    <span>2</span>
+                    <span>Surat Al-Baqarah</span>
+                    <span>2</span>
+                </div>
+            </a>
+            <a data-page="50" class="surah-item">
+                <div class="list-item">
+                    <span>3</span>
+                    <span>Surat Aal-E-Imran</span>
+                    <span>50</span>
+                </div>
+            </a>
+            <a data-page="77" class="surah-item">
+                <div class="list-item">
+                    <span>4</span>
+                    <span>Surat An-Nisa'</span>
+                    <span>77</span>
+                </div>
+            </a>
+            <a data-page="106" class="surah-item">
+                <div class="list-item">
+                    <span>5</span>
+                    <span>Surat Al-Ma'idah</span>
+                    <span>106</span>
+                </div>
+            </a>
+            <a data-page="128" class="surah-item">
+                <div class="list-item">
+                    <span>6</span>
+                    <span>Surat Al-An'am</span>
+                    <span>128</span>
+                </div>
+            </a>
+            <a data-page="151" class="surah-item">
+                <div class="list-item">
+                    <span>7</span>
+                    <span>Surat Al-A'raf</span>
+                    <span>151</span>
+                </div>
+            </a>
+            <a data-page="177" class="surah-item">
+                <div class="list-item">
+                    <span>8</span>
+                    <span>Surat Al-Anfal</span>
+                    <span>177</span>
+                </div>
+            </a>
+            <a data-page="187" class="surah-item">
+                <div class="list-item">
+                    <span>9</span>
+                    <span>Surat At-Tawbah</span>
+                    <span>187</span>
+                </div>
+            </a>
+            <a data-page="208" class="surah-item">
+                <div class="list-item">
+                    <span>10</span>
+                    <span>Surat Yunus</span>
+                    <span>208</span>
+                </div>
+            </a>
+            <a data-page="221" class="surah-item">
+                <div class="list-item">
+                    <span>11</span>
+                    <span>Surat Hud</span>
+                    <span>221</span>
+                </div>
+            </a>
+            <a data-page="235" class="surah-item">
+                <div class="list-item">
+                    <span>12</span>
+                    <span>Surat Yusuf</span>
+                    <span>235</span>
+                </div>
+            </a>
+            <a data-page="249" class="surah-item">
+                <div class="list-item">
+                    <span>13</span>
+                    <span>Surat Ar-Ra'd</span>
+                    <span>249</span>
+                </div>
+            </a>
+            <a data-page="255" class="surah-item">
+                <div class="list-item">
+                    <span>14</span>
+                    <span>Surat Ibrahim</span>
+                    <span>255</span>
+                </div>
+            </a>
+            <a data-page="262" class="surah-item">
+                <div class="list-item">
+                    <span>15</span>
+                    <span>Surat Al-Hijr</span>
+                    <span>262</span>
+                </div>
+            </a>
+            <a data-page="267" class="surah-item">
+                <div class="list-item">
+                    <span>16</span>
+                    <span>Surat An-Nahl</span>
+                    <span>267</span>
+                </div>
+            </a>
+            <a data-page="282" class="surah-item">
+                <div class="list-item">
+                    <span>17</span>
+                    <span>Surat Al-Isra</span>
+                    <span>282</span>
+                </div>
+            </a>
+            <a data-page="293" class="surah-item">
+                <div class="list-item">
+                    <span>18</span>
+                    <span>Surat Al-Kahf</span>
+                    <span>293</span>
+                </div>
+            </a>
+            <a data-page="305" class="surah-item">
+                <div class="list-item">
+                    <span>19</span>
+                    <span>Surat Maryam</span>
+                    <span>305</span>
+                </div>
+            </a>
+            <a data-page="312" class="surah-item">
+                <div class="list-item">
+                    <span>20</span>
+                    <span>Surat Taha</span>
+                    <span>312</span>
+                </div>
+            </a>
+            <a data-page="322" class="surah-item">
+                <div class="list-item">
+                    <span>21</span>
+                    <span>Surat Al-Anbiya</span>
+                    <span>322</span>
+                </div>
+            </a>
+            <a data-page="332" class="surah-item">
+                <div class="list-item">
+                    <span>22</span>
+                    <span>Surat Al-Hajj</span>
+                    <span>332</span>
+                </div>
+            </a>
+            <a data-page="342" class="surah-item">
+                <div class="list-item">
+                    <span>23</span>
+                    <span>Surat Al-Muminun</span>
+                    <span>342</span>
+                </div>
+            </a>
+            <a data-page="350" class="surah-item">
+                <div class="list-item">
+                    <span>24</span>
+                    <span>Surat An-Nur</span>
+                    <span>350</span>
+                </div>
+            </a>
+            <a data-page="359" class="surah-item">
+                <div class="list-item">
+                    <span>25</span>
+                    <span>Surat Al-Furqan</span>
+                    <span>359</span>
+                </div>
+            </a>
+            <a data-page="367" class="surah-item">
+                <div class="list-item">
+                    <span>26</span>
+                    <span>Surat Ash-Shu'ara</span>
+                    <span>367</span>
+                </div>
+            </a>
+            <a data-page="377" class="surah-item">
+                <div class="list-item">
+                    <span>27</span>
+                    <span>Surat An-Naml</span>
+                    <span>377</span>
+                </div>
+            </a>
+            <a data-page="385" class="surah-item">
+                <div class="list-item">
+                    <span>28</span>
+                    <span>Surat Al-Qasas</span>
+                    <span>385</span>
+                </div>
+            </a>
+            <a data-page="396" class="surah-item">
+                <div class="list-item">
+                    <span>29</span>
+                    <span>Surat Al-Ankabut</span>
+                    <span>396</span>
+                </div>
+            </a>
+            
+
+
+            
+    <a data-page="404" class="surah-item">
+        <div class="list-item">
+            <span>30</span>
+            <span>Surat Ar-Rum</span>
+            <span>404</span>
+        </div>
+    </a>
+    <a data-page="411" class="surah-item">
+        <div class="list-item">
+            <span>31</span>
+            <span>Surat Luqman</span>
+            <span>411</span>
+        </div>
+    </a>
+    <a data-page="415" class="surah-item">
+        <div class="list-item">
+            <span>32</span>
+            <span>Surat As-Sajdah</span>
+            <span>415</span>
+        </div>
+    </a>
+    <a data-page="418" class="surah-item">
+        <div class="list-item">
+            <span>33</span>
+            <span>Surat Al-Ahzab</span>
+            <span>418</span>
+        </div>
+    </a>
+    <a data-page="428" class="surah-item">
+        <div class="list-item">
+            <span>34</span>
+            <span>Surat Saba</span>
+            <span>428</span>
+        </div>
+    </a>
+    <a data-page="434" class="surah-item">
+        <div class="list-item">
+            <span>35</span>
+            <span>Surat Fatir</span>
+            <span>434</span>
+        </div>
+    </a>
+    <a data-page="440" class="surah-item">
+        <div class="list-item">
+            <span>36</span>
+            <span>Surat Ya-Sin</span>
+            <span>440</span>
+        </div>
+    </a>
+    <a data-page="446" class="surah-item">
+        <div class="list-item">
+            <span>37</span>
+            <span>Surat As-Saffat</span>
+            <span>446</span>
+        </div>
+    </a>
+    <a data-page="453" class="surah-item">
+        <div class="list-item">
+            <span>38</span>
+            <span>Surat Sad</span>
+            <span>453</span>
+        </div>
+    </a>
+    <a data-page="458" class="surah-item">
+        <div class="list-item">
+            <span>39</span>
+            <span>Surat Az-Zumar</span>
+            <span>458</span>
+        </div>
+    </a>
+    <a data-page="467" class="surah-item">
+        <div class="list-item">
+            <span>40</span>
+            <span>Surat Ghafir</span>
+            <span>467</span>
+        </div>
+    </a>
+    <a data-page="477" class="surah-item">
+        <div class="list-item">
+            <span>41</span>
+            <span>Surat Fussilat</span>
+            <span>477</span>
+        </div>
+    </a>
+    <a data-page="483" class="surah-item">
+        <div class="list-item">
+            <span>42</span>
+            <span>Surat Ash-Shura</span>
+            <span>483</span>
+        </div>
+    </a>
+    <a data-page="489" class="surah-item">
+        <div class="list-item">
+            <span>43</span>
+            <span>Surat Az-Zukhruf</span>
+            <span>489</span>
+        </div>
+    </a>
+    <a data-page="496" class="surah-item">
+        <div class="list-item">
+            <span>44</span>
+            <span>Surat Ad-Dukhan</span>
+            <span>496</span>
+        </div>
+    </a>
+    <a data-page="499" class="surah-item">
+        <div class="list-item">
+            <span>45</span>
+            <span>Surat Al-Jathiyah</span>
+            <span>499</span>
+        </div>
+    </a>
+    <a data-page="502" class="surah-item">
+        <div class="list-item">
+            <span>46</span>
+            <span>Surat Al-Ahqaf</span>
+            <span>502</span>
+        </div>
+    </a>
+    <a data-page="507" class="surah-item">
+        <div class="list-item">
+            <span>47</span>
+            <span>Surat Muhammad</span>
+            <span>507</span>
+        </div>
+    </a>
+    <a data-page="511" class="surah-item">
+        <div class="list-item">
+            <span>48</span>
+            <span>Surat Al-Fath</span>
+            <span>511</span>
+        </div>
+    </a>
+    <a data-page="515" class="surah-item">
+        <div class="list-item">
+            <span>49</span>
+            <span>Surat Al-Hujurat</span>
+            <span>515</span>
+        </div>
+    </a>
+    <a data-page="518" class="surah-item">
+        <div class="list-item">
+            <span>50</span>
+            <span>Surat Qaf</span>
+            <span>518</span>
+        </div>
+    </a>
+
+
+    <a data-page="520" class="surah-item">
+        <div class="list-item">
+            <span>51</span>
+            <span>Surat Adh-Dhariyat</span>
+            <span>520</span>
+        </div>
+    </a>
+    <a data-page="523" class="surah-item">
+        <div class="list-item">
+            <span>52</span>
+            <span>Surat At-Tur</span>
+            <span>523</span>
+        </div>
+    </a>
+    <a data-page="526" class="surah-item">
+        <div class="list-item">
+            <span>53</span>
+            <span>Surat An-Najm</span>
+            <span>526</span>
+        </div>
+    </a>
+    <a data-page="528" class="surah-item">
+        <div class="list-item">
+            <span>54</span>
+            <span>Surat Al-Qamar</span>
+            <span>528</span>
+        </div>
+    </a>
+    <a data-page="531" class="surah-item">
+        <div class="list-item">
+            <span>55</span>
+            <span>Surat Ar-Rahman</span>
+            <span>531</span>
+        </div>
+    </a>
+    <a data-page="534" class="surah-item">
+        <div class="list-item">
+            <span>56</span>
+            <span>Surat Al-Waqiah</span>
+            <span>534</span>
+        </div>
+    </a>
+    <a data-page="537" class="surah-item">
+        <div class="list-item">
+            <span>57</span>
+            <span>Surat Al-Hadid</span>
+            <span>537</span>
+        </div>
+    </a>
+    <a data-page="542" class="surah-item">
+        <div class="list-item">
+            <span>58</span>
+            <span>Surat Al-Mujadila</span>
+            <span>542</span>
+        </div>
+    </a>
+    <a data-page="45" class="surah-item">
+        <div class="list-item">
+            <span>59</span>
+            <span>Surat Al-Hashr</span>
+            <span>45</span>
+        </div>
+    </a>
+    <a data-page="549" class="surah-item">
+        <div class="list-item">
+            <span>60</span>
+            <span>Surat Al-Mumtahina</span>
+            <span>549</span>
+        </div>
+    </a>
+    <a data-page="551" class="surah-item">
+        <div class="list-item">
+            <span>61</span>
+            <span>Surat As-Saff</span>
+            <span>551</span>
+        </div>
+    </a>
+    <a data-page="553" class="surah-item">
+        <div class="list-item">
+            <span>62</span>
+            <span>Surat Al-Jumuah</span>
+            <span>553</span>
+        </div>
+    </a>
+    <a data-page="554" class="surah-item">
+        <div class="list-item">
+            <span>63</span>
+            <span>Surat Al-Munafiqun</span>
+            <span>554</span>
+        </div>
+    </a>
+    <a data-page="556" class="surah-item">
+        <div class="list-item">
+            <span>64</span>
+            <span>Surat At-Taghabun</span>
+            <span>556</span>
+        </div>
+    </a>
+    <a data-page="558" class="surah-item">
+        <div class="list-item">
+            <span>65</span>
+            <span>Surat At-Talaq</span>
+            <span>558</span>
+        </div>
+    </a>
+    <a data-page="560" class="surah-item">
+        <div class="list-item">
+            <span>66</span>
+            <span>Surat At-Tahrim</span>
+            <span>560</span>
+        </div>
+    </a>
+    <a data-page="562" class="surah-item">
+        <div class="list-item">
+            <span>67</span>
+            <span>Surat Al-Mulk</span>
+            <span>562</span>
+        </div>
+    </a>
+    <a href="data-page="564" class="surah-item">
+        <div class="list-item">
+            <span>68</span>
+            <span>Surat Al-Qalam</span>
+            <span>564</span>
+        </div>
+    </a>
+    <a data-page="566" class="surah-item">
+        <div class="list-item">
+            <span>69</span>
+            <span>Surat Al-Haqqah</span>
+            <span>566</span>
+        </div>
+    </a>
+    <a data-page="568" class="surah-item">
+        <div class="list-item">
+            <span>70</span>
+            <span>Surat Al-Maarij</span>
+            <span>568</span>
+        </div>
+    </a>
+    <a data-page="570" class="surah-item">
+        <div class="list-item">
+            <span>71</span>
+            <span>Surat Nuh</span>
+            <span>570</span>
+        </div>
+    </a>
+    <a data-page="572" class="surah-item">
+        <div class="list-item">
+            <span>72</span>
+            <span>Surat Al-Jinn</span>
+            <span>572</span>
+        </div>
+    </a>
+    <a data-page="574" class="surah-item">
+        <div class="list-item">
+            <span>73</span>
+            <span>Surat Al-Muzzammil</span>
+            <span>574</span>
+        </div>
+    </a>
+    <a data-page="575" class="surah-item">
+        <div class="list-item">
+            <span>74</span>
+            <span>Surat Al-Muddathir</span>
+            <span>575</span>
+        </div>
+    </a>
+    <a data-page="577" class="surah-item">
+        <div class="list-item">
+            <span>75</span>
+            <span>Surat Al-Qiyamah</span>
+            <span>577</span>
+        </div>
+    </a>
+    <a data-page="578" class="surah-item">
+        <div class="list-item">
+            <span>76</span>
+            <span>Surat Al-Insan</span>
+            <span>578</span>
+        </div>
+    </a>
+    <a data-page="580" class="surah-item">
+        <div class="list-item">
+            <span>77</span>
+            <span>Surat Al-Mursalat</span>
+            <span>580</span>
+        </div>
+    </a>
+    <a data-page="582" class="surah-item">
+        <div class="list-item">
+            <span>78</span>
+            <span>Surat An-Naba</span>
+            <span>582</span>
+        </div>
+    </a>
+    <a data-page="583" class="surah-item">
+        <div class="list-item">
+            <span>79</span>
+            <span>Surat An-Naziat</span>
+            <span>583</span>
+        </div>
+    </a>
+    <a data-page="585" class="surah-item">
+        <div class="list-item">
+            <span>80</span>
+            <span>Surat Abasa</span>
+            <span>585</span>
+        </div>
+    </a>
+
+    
+    <a data-page="586" class="surah-item">
+        <div class="list-item">
+            <span>81</span>
+            <span>Surat At-Takwir</span>
+            <span>586</span>
+        </div>
+    </a>
+    <a data-page="587" class="surah-item">
+        <div class="list-item">
+            <span>82</span>
+            <span>Surat Al-Infitar</span>
+            <span>587</span>
+        </div>
+    </a>
+    <a data-page="587" class="surah-item">
+        <div class="list-item">
+            <span>83</span>
+            <span>Surat Al-Mutaffifin</span>
+            <span>587</span>
+        </div>
+    </a>
+    <a data-page="589" class="surah-item">
+        <div class="list-item">
+            <span>84</span>
+            <span>Surat Al-Inshiqaq</span>
+            <span>589</span>
+        </div>
+    </a>
+    <a data-page="590" class="surah-item">
+        <div class="list-item">
+            <span>85</span>
+            <span>Surat Al-Buruj</span>
+            <span>590</span>
+        </div>
+    </a>
+    <a data-page="591" class="surah-item">
+        <div class="list-item">
+            <span>86</span>
+            <span>Surat At-Tariq</span>
+            <span>591</span>
+        </div>
+    </a>
+    <a data-page="591" class="surah-item">
+        <div class="list-item">
+            <span>87</span>
+            <span>Surat Al-Ala</span>
+            <span>591</span>
+        </div>
+    </a>
+    <a data-page="592" class="surah-item">
+        <div class="list-item">
+            <span>88</span>
+            <span>Surat Al-Ghashiyah</span>
+            <span>592</span>
+        </div>
+    </a>
+    <a data-page="593" class="surah-item">
+        <div class="list-item">
+            <span>89</span>
+            <span>Surat Al-Fajr</span>
+            <span>593</span>
+        </div>
+    </a>
+    <a data-page="594" class="surah-item">
+        <div class="list-item">
+            <span>90</span>
+            <span>Surat Al-Balad</span>
+            <span>594</span>
+        </div>
+    </a>
+    <a data-page="595" class="surah-item">
+        <div class="list-item">
+            <span>91</span>
+            <span>Surat Ash-Shams</span>
+            <span>595</span>
+        </div>
+    </a>
+    <a data-page="595" class="surah-item">
+        <div class="list-item">
+            <span>92</span>
+            <span>Surat Al-Lail</span>
+            <span>595</span>
+        </div>
+    </a>
+    <a data-page="596" class="surah-item">
+        <div class="list-item">
+            <span>93</span>
+            <span>Surat Ad-Duha</span>
+            <span>596</span>
+        </div>
+    </a>
+    <a data-page="596" class="surah-item">
+        <div class="list-item">
+            <span>94</span>
+            <span>Surat Ash-Sharh</span>
+            <span>596</span>
+        </div>
+    </a>
+    <a data-page="597" class="surah-item">
+        <div class="list-item">
+            <span>95</span>
+            <span>Surat At-Tin</span>
+            <span>597</span>
+        </div>
+    </a>
+    <a data-page="597" class="surah-item">
+        <div class="list-item">
+            <span>96</span>
+            <span>Surat Al-Alaq</span>
+            <span>597</span>
+        </div>
+    </a>
+    <a data-page="598" class="surah-item">
+        <div class="list-item">
+            <span>97</span>
+            <span>Surat Al-Qadr</span>
+            <span>598</span>
+        </div>
+    </a>
+    <a data-page="598" class="surah-item">
+        <div class="list-item">
+            <span>98</span>
+            <span>Surat Al-Bayyina</span>
+            <span>598</span>
+        </div>
+    </a>
+    <a data-page="599" class="surah-item">
+        <div class="list-item">
+            <span>99</span>
+            <span>Surat Az-Zalzalah</span>
+            <span>599</span>
+        </div>
+    </a>
+    <a data-page="599" class="surah-item">
+        <div class="list-item">
+            <span>100</span>
+            <span>Surat Al-Adiyat</span>
+            <span>599</span>
+        </div>
+    </a>
+    <a data-page="600" class="surah-item">
+        <div class="list-item">
+            <span>101</span>
+            <span>Surat Al-Qariah</span>
+            <span>600</span>
+        </div>
+    </a>
+    <a data-page="600" class="surah-item">
+        <div class="list-item">
+            <span>102</span>
+            <span>Surat At-Takathur</span>
+            <span>600</span>
+        </div>
+    </a>
+    <a data-page="601" class="surah-item">
+        <div class="list-item">
+            <span>103</span>
+            <span>Surat Al-Asr</span>
+            <span>601</span>
+        </div>
+    </a>
+    <a data-page="601" class="surah-item">
+        <div class="list-item">
+            <span>104</span>
+            <span>Surat Al-Humazah</span>
+            <span>601</span>
+        </div>
+    </a>
+    <a data-page="601" class="surah-item">
+        <div class="list-item">
+            <span>105</span>
+            <span>Surat Al-Fil</span>
+            <span>601</span>
+        </div>
+    </a>
+    <a data-page="602" class="surah-item">
+        <div class="list-item">
+            <span>106</span>
+            <span>Surat Quraish</span>
+            <span>602</span>
+        </div>
+    </a>
+    <a data-page="602" class="surah-item">
+        <div class="list-item">
+            <span>107</span>
+            <span>Surat Al-Maun</span>
+            <span>602</span>
+        </div>
+    </a>
+    <a data-page="602" class="surah-item">
+        <div class="list-item">
+            <span>108</span>
+            <span>Surat Al-Kawthar</span>
+            <span>602</span>
+        </div>
+    </a>
+    <a data-page="603" class="surah-item">
+        <div class="list-item">
+            <span>109</span>
+            <span>Surat Al-Kafiroon</span>
+            <span>603</span>
+        </div>
+    </a>
+    <a data-page="603" class="surah-item">
+        <div class="list-item">
+            <span>110</span>
+            <span>Surat An-Nasr</span>
+            <span>603</span>
+        </div>
+    </a>
+
+    
+    <a data-page="603" class="surah-item">
+        <div class="list-item">
+            <span>111</span>
+            <span>Surat Al-Masad</span>
+            <span>603</span>
+        </div>
+    </a>
+    <a data-page="604" class="surah-item">
+        <div class="list-item">
+            <span>112</span>
+            <span>Surat Al-Ikhlas</span>
+            <span>604</span>
+        </div>
+    </a>
+    <a data-page="605" class="surah-item">
+        <div class="list-item">
+            <span>113</span>
+            <span>Surat Al-Falaq</span>
+            <span>605</span>
+        </div>
+    </a>
+    <a data-page="605" class="surah-item" id=an-nas>
+        <div class="list-item">
+            <span>114</span>
+            <span>Surat An-Nas</span>
+            <span>605</span>
+        </div>
+    </a>
+
+    <div id="surah-no-results" class="no-results" style="display: none;">No matching Surahs found</div>
+    
+        </div>
+
+
+
+        <!-- Juzz Tab  -->
+
+        <div id="juz-tab" class="tab-content">
+
+            <a data-page="1" class="juz-item">
+                <div class="list-item">
+                    <div>1</div>
+                    <div>Juz 1</div>
+                    <div>1</div>
+                </div>
+            </a>
+            <a data-page="22" class="juz-item">
+                <div class="list-item">
+                    <div>2</div>
+                    <div>Juz 2</div>
+                    <div>22</div>
+                </div>
+            </a>
+            <a data-page="42" class="juz-item">
+                <div class="list-item">
+                    <div>3</div>
+                    <div>Juz 3</div>
+                    <div>42</div>
+                </div>
+            </a>
+            <a data-page="62" class="juz-item">
+                <div class="list-item">
+                    <div>4</div>
+                    <div>Juz 4</div>
+                    <div>62</div>
+                </div>
+            </a>
+            <a data-page="82" class="juz-item">
+                <div class="list-item">
+                    <div>5</div>
+                    <div>Juz 5</div>
+                    <div>82</div>
+                </div>
+            </a>
+            <a data-page="102" class="juz-item">
+                <div class="list-item">
+                    <div>6</div>
+                    <div>Juz 6</div>
+                    <div>102</div>
+                </div>
+            </a>
+            <a data-page="121" class="juz-item">
+                <div class="list-item">
+                    <div>7</div>
+                    <div>Juz 7</div>
+                    <div>121</div>
+                </div>
+            </a>
+            <a data-page="142" class="juz-item">
+                <div class="list-item">
+                    <div>8</div>
+                    <div>Juz 8</div>
+                    <div>142</div>
+                </div>
+            </a>
+            <a data-page="162" class="juz-item">
+                <div class="list-item">
+                    <div>9</div>
+                    <div>Juz 9</div>
+                    <div>162</div>
+                </div>
+            </a>
+            <a data-page="182" class="juz-item">
+                <div class="list-item">
+                    <div>10</div>
+                    <div>Juz 10</div>
+                    <div>182</div>
+                </div>
+            </a>
+            <a data-page="201" class="juz-item">
+                <div class="list-item">
+                    <div>11</div>
+                    <div>Juz 11</div>
+                    <div>201</div>
+                </div>
+            </a>
+            <a data-page="222" class="juz-item">
+                <div class="list-item">
+                    <div>12</div>
+                    <div>Juz 12</div>
+                    <div>222</div>
+                </div>
+            </a>
+            <a data-page="242" class="juz-item">
+                <div class="list-item">
+                    <div>13</div>
+                    <div>Juz 13</div>
+                    <div>242</div>
+                </div>
+            </a>
+            <a data-page="262" class="juz-item">
+                <div class="list-item">
+                    <div>14</div>
+                    <div>Juz 14</div>
+                    <div>262</div>
+                </div>
+            </a>
+            <a data-page="282" class="juz-item">
+                <div class="list-item">
+                    <div>15</div>
+                    <div>Juz 15</div>
+                    <div>282</div>
+                </div>
+            </a>
+            <a data-page="302" class="juz-item">
+                <div class="list-item">
+                    <div>16</div>
+                    <div>Juz 16</div>
+                    <div>302</div>
+                </div>
+            </a>
+            <a data-page="322" class="juz-item">
+                <div class="list-item">
+                    <div>17</div>
+                    <div>Juz 17</div>
+                    <div>322</div>
+                </div>
+            </a>
+            <a data-page="342" class="juz-item">
+                <div class="list-item">
+                    <div>18</div>
+                    <div>Juz 18</div>
+                    <div>342</div>
+                </div>
+            </a>
+            <a data-page="362" class="juz-item">
+                <div class="list-item">
+                    <div>19</div>
+                    <div>Juz 19</div>
+                    <div>362</div>
+                </div>
+            </a>
+            <a data-page="382" class="juz-item">
+                <div class="list-item">
+                    <div>20</div>
+                    <div>Juz 20</div>
+                    <div>382</div>
+                </div>
+            </a>
+            <a data-page="402" class="juz-item">
+                <div class="list-item">
+                    <div>21</div>
+                    <div>Juz 21</div>
+                    <div>402</div>
+                </div>
+            </a>
+            <a data-page="422" class="juz-item">
+                <div class="list-item">
+                    <div>22</div>
+                    <div>Juz 22</div>
+                    <div>422</div>
+                </div>
+            </a>
+            <a data-page="442" class="juz-item">
+                <div class="list-item">
+                    <div>23</div>
+                    <div>Juz 23</div>
+                    <div>442</div>
+                </div>
+            </a>
+            <a data-page="462" class="juz-item">
+                <div class="list-item">
+                    <div>24</div>
+                    <div>Juz 24</div>
+                    <div>462</div>
+                </div>
+            </a>
+            <a data-page="482" class="juz-item">
+                <div class="list-item">
+                    <div>25</div>
+                    <div>Juz 25</div>
+                    <div>482</div>
+                </div>
+            </a>
+            <a data-page="502" class="juz-item">
+                <div class="list-item">
+                    <div>26</div>
+                    <div>Juz 26</div>
+                    <div>502</div>
+                </div>
+            </a>
+            <a data-page="522" class="juz-item">
+                <div class="list-item">
+                    <div>27</div>
+                    <div>Juz 27</div>
+                    <div>522</div>
+                </div>
+            </a>
+            <a data-page="542" class="juz-item">
+                <div class="list-item">
+                    <div>28</div>
+                    <div>Juz 28</div>
+                    <div>542</div>
+                </div>
+            </a>
+            <a data-page="562" class="juz-item">
+                <div class="list-item">
+                    <div>29</div>
+                    <div>Juz 29</div>
+                    <div>562</div>
+                </div>
+            </a>
+            <a data-page="582" class="juz-item" id="juz-30">
+                <div class="list-item" >
+                    <div>30</div>
+                    <div>Juz 30</div>
+                    <div>582</div>
+                </div>
+            </a>
+            
+
+            <div id="juz-no-results" class="no-results" style="display: none;">No matching Juz found</div>
+
+
+        </div>
+    </div>
+
+    <script src="JavaScript/script.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script> -->
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quran</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="#">Al-Tawjih</a></h1>
+            <div class="search">
+            <input type="text" id="search-input" class="searchInput" placeholder="  Search Surah or Juz...">    
+        <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+        </nav>
+        <div class="slider">
+            <button class="juzz">Juzz</button>
+            <button class="surah">Surah</button>
+        </div>
+    </header>
+
+
+    <main>
+        <a href=""><div class="box"><span>(1)</span> <span>Surat Al-Fatihah</span> <span>1</span></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+        <a href=""><div class="box"></div></a>
+    </main>
+</body>
+</html> -->

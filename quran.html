@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quran - Al-Tawjih</title>
+  <link rel="stylesheet" href="CSS/quran.css">
+</head>
+<body>
+   <!-- Interactive Tutorial Overlay -->
+ <div class="tutorial-overlay" id="tutorialOverlay">
+  <div class="tutorial-spotlight" id="tutorialSpotlight"></div>
+  <div class="tutorial-arrow" id="tutorialArrow"></div>
+  <div class="tutorial-message" id="tutorialMessage">
+    <h3 id="tutorialTitle">Welcome!</h3>
+    <p id="tutorialText">Let's explore the Quran Interactive Viewer together.</p>
+    <div class="tutorial-controls">
+      <button class="tutorial-btn tutorial-skip-btn" id="tutorialSkipBtn">Skip Tutorial</button>
+      <button class="tutorial-btn tutorial-next-btn" id="tutorialNextBtn">Next</button>
+    </div>
+    <div class="tutorial-progress" id="tutorialProgress"></div>
+  </div>
+</div>
+<div class="container">
+  <div class="mobile-wrapper">
+    <div class="mobile-box">
+      <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous Page">←</button>
+      <button class="nav-btn next-btn" id="nextBtn" aria-label="Next Page">→</button>
+      
+      <div class="content-container">
+
+        <div class="top-nav" id="topNav">
+          <button class="back-btn" onclick="location.href='index.html'">Back</button>
+          <div class="goto-container">
+            <input type="number" id="pageNumberInput" min="1" max="605" placeholder="Page #">
+            <button class="goto-btn" id="gotoPageBtn">Go</button>
+          </div>
+        </div>
+        <div class="content" id="zoomContent">
+          <!-- The Quran page background image is set in CSS -->
+          
+          <!-- This overlay div contains all the positioned ayat boxes -->
+          <div class="ayat-overlay" id="ayatOverlay">
+            <!-- Ayat boxes will be loaded dynamically -->
+          </div>
+          
+          <div class="ayat-tooltip" id="ayatTooltip"></div>
+        </div>
+        <div class="zoom-indicator" id="zoomMsg">Drag to move, Reset zoom to swipe</div>
+        <!-- <div class="page-indicator" id="pageIndicator">Page 1</div> -->
+
+        <div class="audio-player" id="audioPlayer">
+          <div class="player-controls">
+            <div class="speed-controls">
+              <button class="player-btn" id="speedBtn">Speed 1.0x</button>
+              <button class="player-btn" id="repeatBtn">Auto Play</button>
+            </div>
+            
+            <div class="progress-bar">
+              <span class="time-display" id="currentTime">0:00</span>
+              <div class="progress-container">
+                <div class="progress-track" id="progressTrack"></div>
+                <div class="progress-handle" id="progressHandle"></div>
+              </div>
+              <span class="time-display" id="totalTime">0:00</span>
+            </div>
+            
+            <div class="playback-controls">
+              <div class="control-row">
+                <button class="control-btn" id="repeatAyatBtn"><span class="icon">↶</span><span class="label">Repeat Ayat</span></button>
+                <button class="control-btn" id="playThisPageBtn"><span class="icon">≡▶</span><span class="label">Play This Page</span></button>
+                <!-- <button class="control-btn" id="repeatPageBtn"><span class="icon">↷</span><span class="label">Repeat Page</span></button> -->
+              </div>
+              
+              <div class="control-row">
+                <button class="control-btn" id="rewindBtn"><span class="icon">↺</span><span class="label">-5 Sec</span></button>
+                
+                <button class="control-btn" id="playBtn"><span class="icon">▶</span><span class="label">Play</span></button>
+                <button class="control-btn" id="forwardBtn"><span class="icon">↻</span><span class="label">+5 Sec</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="controls">
+    <button class="zoom-btn" id="zoomOut" aria-label="Zoom Out">−</button>
+    <div class="zoom-level" id="zoomLevel">100%</div>
+    <button class="zoom-btn" id="zoomIn" aria-label="Zoom In">+</button>
+    <button class="reset-btn" id="resetZoom">Reset</button>
+  </div>
+</div>
+<script src="JavaScript/pageAyatData.js"></script>
+<script src="JavaScript/quran.js"></script>
+</body>
+</html>
